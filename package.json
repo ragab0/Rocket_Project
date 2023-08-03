@@ -1,0 +1,11 @@
+{
+  "name": "rocket_app_step_3_01",
+  "version": "1.0.0",
+  "description": "Rocket app for Learning tailwindcss, STEP_3_01",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "start": "npx tailwindcss -i ./src/input.css -o ./docs/css/style.css --watch"
+  },
+  "author": "",
+  "license": "ISC"
+}

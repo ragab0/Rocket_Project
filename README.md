@@ -1,1 +1,2 @@
-# Rocket_Project
+# Rocket_Project (STEP_3)
+First project in learning tailwindcss and first project in the third phase which i'm going to learn on it tailwindcss and nextjs after learning react, its hooks, and redux + redux toolkit;

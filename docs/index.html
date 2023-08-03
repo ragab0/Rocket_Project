@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<!-- <html lang="en" class="scroll-smooth"> -->
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/favicon.ico">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Rocket app</title>
+</head>
+<body class="sm-maximum:mobil min-h-screen bg-slate-50 dark:bg-black">
+    <header class="bg-teal-700 text-white sticky top-0 z-10">
+        <section class="max-w-4xl mx-auto px-2 py-[2px] sm:py-2 flex justify-between items-center">
+            <h1 class="sm:text-3xl text-2xl font-medium capitalize"><a href="#hero">🚀 acme rockets</a></h1>
+            <button id="menu-buttons" class="text-3xl sm:hidden w-8 h-8 p-6 hover:bg-gray-700 hover:bg-opacity-25 active:scale-90 duration-200 rounded-full flex items-center justify-center">
+                ☰
+            </button>
+            <nav id="nav" class="sm-maximum:hide">
+                <ul class="flex gap-8 sm:pr-4 mx-auto capitalize">
+                    <li class="sm:hidden">
+                        <a href="#hero">home</a>
+                    </li>
+                    <li>
+                        <a href="#rockets">rockets</a>
+                    </li>
+                    <li>
+                        <a href="#testimonials">testimonials</a>
+                    </li>
+                    <li>
+                        <a href="#contact">contact</a>
+                    </li>
+                    <li>
+                        <a href="#footer" class="sm:hidden">legal</a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+    <main class="max-w-4xl mx-auto">
+        <!-- First section: Hero -->
+        <section id="hero" class="p-6 mt-12 lg:m-0 min-h-screen flex flex-col-reverse justify-center sm:flex-row items-center gap-8 ">
+            <div>
+                <h2 class="text-4xl font-bold my-4 text-slate-900 dark:text-white">We Boldly Go <span class="text-indigo-700 dark:text-indigo-300">Where No Rocket</span> Has Gone Before...</h2>
+                <p class="my-4 text-xl">We're building rockets for the next century today. From the moon to Mars, Jupiter, and beyond.</p>
+                <p class="text-lg">Think Acme Rockets.</p>
+            </div>
+            <img alt="rocket weee" src="img/rocketdab.png" />
+        </section>
+        <!-- End of section one -->
+        <hr class="mx-auto w-1/2 bg-black: dark:bg-white my-12">
+        <!-- Second section:  -->
+        <section id="rockets" class="p-6 min-h-screen text-center grid grid-rows-[auto,1fr]">
+            <h2 class="capitalize my-12 font-bold text-5xl">our rockets</h2>
+            <div class="articles flex flex-col lg:flex-row justify-center items-center gap-8">
+                <article >
+                    <figure class="">
+                        <img alt="rocket_1" src="img/rocketdab.png" />
+                        <figcaption>$</figcaption>
+                    </figure>
+                </article>
+                <article class="lg:place-self-start">
+                    <figure>
+                        <img alt="rocket_1" src="img/rocketlaunch.png" />
+                        <figcaption>$</figcaption>
+                    </figure>
+                </article>
+                <article>
+                    <figure>
+                        <img alt="rocket_1" src="img/rocketride.png" />
+                        <figcaption>$</figcaption>
+                    </figure>
+                </article>
+            </div>
+        </section>
+        <!-- End of section two -->
+        <hr class="mx-auto w-1/2 bg-black: dark:bg-white my-12">
+        <!-- Third section:  -->
+        <section id="testimonials" class="p-6 min-h-screen text-xl sm:text-2xl">
+            <h2 class="capitalize my-12 font-bold text-5xl text-center">testimonials</h2>
+            <div class="tests text-white dark:text-slate-400">
+                <div class="test bg-teal-600 dark:bg-black px-10 py-12 rounded-3xl relative">
+                    <p class="post my-2 before:text-slate-400">
+                        Acme has always been there for me. Their Explorer rocket is the best rocket I've ever flown. 
+                        I've been to the moon and back and I can't wait to go again.
+                    </p>
+                </div>
+                <p class="text-right text-sm text-slate-400 dark:text-gray-100 mt-2 mb-8 italic">&#8212; Wile E. Coyote, Genius</p>
+                <div class="test bg-teal-600 dark:bg-black px-10 py-12 rounded-3xl relative">
+                    <p class="post my-2 before:text-slate-400">
+                        The Acme Adventurer Rocket has thwarted my Illudium Q-36 Explosive Space Modulator on several occasions. 
+                        This makes me very, very angry! Nevertheless, K-9 and I have awarded Acme the Martian contract for space 
+                        exploration rockets based on Acme's quality and sturdy designs.
+                    </p>
+                </div>
+                <p class="text-right text-sm text-slate-400 dark:text-gray-100 mt-2 mb-8 italic">&#8212; Marvin the Martian & K-9</p>
+                <div class="test bg-teal-600 dark:bg-black px-10 py-12 rounded-3xl relative">
+                    <p class="post my-2 before:text-slate-400">
+                        I knew I not only wanted — I needed — Acme's Infinity Rocket for my mission in space. 
+                        Acme delivered in one day! Nothing says Take me to your leader like Acme's Infinity Rocket! 💯
+                    </p>
+                </div>
+                <p class="text-right text-sm text-slate-400 dark:text-gray-100 mt-2 mb-8 italic">&#8212; Buzz Lightyear, Space Ranger</p>
+            </div>
+        </section>
+        <!-- End of section three -->
+        <hr class="mx-auto w-1/2 bg-black: dark:bg-white my-12">
+        <!-- Fourth section:  -->
+        <section id="contact" class="p-6  min-h-screen">
+            <h2 class="capitalize my-12 font-bold text-5xl text-center">contact us</h2>
+            <form class="grid gap-4">
+                <label>
+                    <span class="block text-xl mb-1">Subject:</span>
+                    <input type="text" class="w-full p-2" placeholder="Your Subject...">
+                </label>
+                <label>
+                    <span class="block text-xl mb-1">Message:</span>
+                    <textarea name="message" rows="12" class="w-full h-{300px} placeholder:capitalize p-2" placeholder="your message..." ></textarea>
+                </label>
+                <button class="bg-teal-700 text-white text-xl py-2 px-8 hover:bg-teal-600 transition-{.2s}">Submit</button>
+            </form>
+        </section>
+    </main>
+    <footer id="footer" class="bg-teal-700 mt-12 text-white text-sm">
+        <section class="max-w-4xl mx-auto py-12 px-8">
+            <p>Acme Rocket-Powered Products, Inc.
+            <p>555 Astro Wayg
+            <p>Fairfield, New Giza 12345-5555
+            <p>Email: Inquires@AcmeRockets.com
+            <p>Phone: (555) 555-5555
+        </section>
+        <p class="text-center p-4 cursor-help bg-teal-950" title="First project. Best introduction to learn tailwindcss. Learning by doing. See you in nextjs. Hard work good job legend thank you">
+            Created by legend to learn tailwindcss</p>
+    </footer>
+    <script src="./js/main.js"></script>
+</body>
+</html>

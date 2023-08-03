@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+    .mobil nav {
+        @apply absolute top-full left-0 w-full min-h-[calc(100vh-100%)] bg-black text-4xl origin-top animate-open-menu grid cursor-pointer
+    };
+    .mobil ul {
+        @apply flex flex-col items-center justify-evenly gap-4
+    };
+    .hide {
+        display: none !important;
+    }
+}
+
+/* Items */
+#nav li:hover {
+    opacity: .8;
+}
+
+/* Figures */
+figure {
+    transition: .2s;
+}
+
+figure:hover {
+    transform: scale(1.1);
+    cursor:grabbing;
+}
+figcaption {
+    margin-block: 16px;
+}
+
+
+/* Posts */
+p.post::before,
+p.post::after {
+    position: absolute;
+    font-family: sans-serif;
+    opacity: .8;
+    color: #fff;
+    transform: translate(2);
+    font-size:100px;
+    transition: .5 all;
+}
+
+p.post::after {
+    content: "\201c";
+    top: 50px;
+    left: 10px;
+}
+p.post::before {
+    content: "\201D";
+    bottom: -15px;
+    right: 10px;
+}
